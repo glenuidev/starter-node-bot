@@ -40,6 +40,10 @@ controller.hears('.*', ['mention'], function (bot, message) {
   bot.reply(message, 'You really do care about me. :heart:')
 })
 
+controller.hears('cool', ['mention'], function (bot, message) {
+  bot.reply(message, ':sunglasses:')
+})
+
 controller.hears('help', ['direct_message', 'direct_mention'], function (bot, message) {
   var help = 'I will respond to the following messages: \n' +
       '`bot hi` for a simple message.\n' +
