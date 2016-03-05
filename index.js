@@ -40,7 +40,7 @@ controller.hears('.*', ['mention'], function (bot, message) {
   bot.reply(message, 'You really do care about me. :heart:')
 })
 
-controller.hears('cool', ['mention'], function (bot, message) {
+controller.hears('cool', ['mention','direct_mention','direct_message'], function (bot, message) {
   bot.reply(message, ':sunglasses:')
 })
 
