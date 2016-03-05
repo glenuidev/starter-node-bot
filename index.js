@@ -31,7 +31,7 @@ controller.hears(['hello', 'hi'], ['direct_message'], function (bot, message) {
   bot.reply(message, 'It\'s nice to talk to you directly.')
 })
 
-controller.hears(['What( i|\')s the national bird of Alaska'], ['direct_message'], function (bot, message) {
+controller.hears(['What is the national bird of Alaska'], ['direct_message'], function (bot, message) {
   bot.reply(message, 'That\'s easy...')
   bot.reply(message, 'It\'s a mosquito! Ask Nathan, he knows this from experience.')
 })
